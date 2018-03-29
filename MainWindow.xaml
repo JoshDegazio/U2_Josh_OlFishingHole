@@ -1,0 +1,29 @@
+﻿<Window x:Class="U2_Josh_FishingHole.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:U2_Josh_FishingHole"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <StackPanel>
+        <TextBox x:Name="txt_input"
+                 Text="Input values here. The values will then be converted to fish points."
+                 FontSize="22"
+                 TextWrapping="Wrap"
+                 AcceptsReturn="True"
+                 />
+        <TextBlock x:Name="txt_Instructions"
+                   Text="Click the button below to run the program."
+                   />
+        <Button x:Name="btn_Run"
+                Content="Run"
+                Click="Click_Run"
+                FontSize="22"
+                />
+        <TextBlock x:Name="txt_outpt"
+                   Text="Your text will be outputed here."
+                   FontSize="18"
+                   />
+    </StackPanel>
+</Window>
